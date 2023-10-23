@@ -1,15 +1,12 @@
 body{
   font-family: Arial;
-  background-color: #f4f4f4;
   padding: 30px;
   color: #333;
-  background-image: url(./img/Bustling_Cities_Scenery_Photo_HD_Wallpaper_01_1366x768.jpg);
-  background-size: cover;
-  background-repeat: center;
+  background: linear-gradient(to right, #46605b, #4c998a, #5cf5d6);
 }
 .app{
-  max-width: 600px;
-  margin: 0 auto 300px;
+  max-width: 50%;
+  margin: 0 auto;
   background-color: #efefef;
   padding: 30px;
   border-radius: 10px;
