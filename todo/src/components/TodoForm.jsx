@@ -3,12 +3,14 @@ import { useState } from 'react'
 const TodoForm = ({addTodo}) => {
     const [value, setValue] = useState("");
     const [category, setCategory] = useState("");
+    const [date, setDate] = useState(null);
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        if(!value || !category) return;
-        addTodo(value, category);
+        if(!value || !category || !date) return;
+        addTodo(value, category, date);
         setValue("")
+        setDate("")
         setCategory("")
     }
 
@@ -21,6 +23,12 @@ const TodoForm = ({addTodo}) => {
                 placeholder="Digite um título" 
                 value={value}
                 onChange={(e) => setValue(e.target.value)}
+                />
+
+                <input type="date"
+                placeholder="Digite a data de entrega" 
+                value={date}
+                onChange={(e) => setDate(e.target.value)}
                 />
 
 

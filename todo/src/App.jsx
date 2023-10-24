@@ -24,11 +24,12 @@ function App() {
   }, [todos]);
 
   // Função para adicionar uma nova tarefa à lista de tarefas.
-  const addTodo = (text, category) => {
+  const addTodo = (text, category, date) => {
     const newTodos = [...todos, {
       id: Math.floor(Math.random() * 1000),
       text, 
-      category, 
+      category,
+      date,
       isCompleted: false,
     }];
     setTodos(newTodos);

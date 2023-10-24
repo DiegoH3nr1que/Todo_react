@@ -6,7 +6,10 @@ const Todo = ({todo, removeTodo, completeTodo}) => {
             <div className='content'>
                 <p>{todo.text}</p>
                 <p className='category'>
-                  ({todo.category})
+                    ({todo.category})
+                </p>
+                <p className='date'>
+                    ({todo.date})
                 </p>
             </div>
             <div>
