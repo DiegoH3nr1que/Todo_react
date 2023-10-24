@@ -69,7 +69,10 @@ button:hover{
 .remove{
   background-color: #d9534f;
 }
-
+.remove img{
+  width: 10px;
+  height: 10px;
+}
 .todo-form{
    padding-bottom: 1.5rem;
 }
