@@ -9,7 +9,7 @@ const Todo = ({todo, removeTodo, completeTodo}) => {
                     ({todo.category})
                 </p>
                 <p className='date'>
-                    ({todo.date})
+                    {todo.date}
                 </p>
             </div>
             <div>
